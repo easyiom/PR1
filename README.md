@@ -15,10 +15,10 @@ Echale un ojo a **Deployment** (Despliegue) para conocer como desplegar el proye
 _Para poder tener nuestro proyecto funcionando en local necesitaremos las siguientes cosas:_
 
 
-    1. Tener instalado el XAMPP (o servidor APACHE y mysql)
-        1.1. Para instalar XAMPP ejecuta el .exe y guardalo en una unidad (Ej. C:\xampp).
-    2. Tener instalado un editor de texto (como VSCode, o como notepad+++).
-        2.2. Instala el editor de texto como un programa.
+1. Tener instalado el XAMPP (o servidor APACHE y mysql)
+    1.1. Para instalar XAMPP ejecuta el .exe y guardalo en una unidad (Ej. C:\xampp).
+2. Tener instalado un editor de texto (como VSCode, o como notepad+++).
+    2.2. Instala el editor de texto como un programa.
 
 
 ### Instalación 🔧
@@ -28,36 +28,36 @@ _Aqui se te explicara como instalar/hacer todo lo necesario para que la aplicaci
 _Importar la Base De Datos_
 
 
-    1. Comprobar que el servicio de MySQL de tu ordenador no esta activado. Para comprobarlo escribe en la lupa "Servicios" busca "MySQL80" y si esta activo desactivalo.
-    2. Una vez instalado XAMPP activa el servicio MySQL y Apache.
-    3. Dale Administrar MySQL (botón a la derecha del de iniciar servicio).
-    4. Cuando se abra la página arriba en el centro con una flecha de color rojo tenemos el botón "Importar", le damos click.
-    5. Cuando se nos abra la nueva ventano tendremos otro botón que dice "Selecionar Archivo", le damos click y buscamos nuestro archivo .sql que se encuentra dentro de la carpeta "db".
+1. Comprobar que el servicio de MySQL de tu ordenador no esta activado. Para comprobarlo escribe en la lupa "Servicios" busca "MySQL80" y si esta activo desactivalo.
+2. Una vez instalado XAMPP activa el servicio MySQL y Apache.
+3. Dale Administrar MySQL (botón a la derecha del de iniciar servicio).
+4. Cuando se abra la página arriba en el centro con una flecha de color rojo tenemos el botón "Importar", le damos click.
+5. Cuando se nos abra la nueva ventano tendremos otro botón que dice "Selecionar Archivo", le damos click y buscamos nuestro archivo .sql que se encuentra dentro de la carpeta "db".
 
 
 _Crear el fichero "config.php" (En caso de no tenerlo en services_
 
 
-   1. Si este fichero no existe, lo creas siguiendo el siguiente ejemplo:
-        ```php
-        <?php 
-        define("SERVIDOR","localhost"); 
-        define("USUARIO","root");
-        define("PASSWORD","");
-        define("BD","db_restaurante");
-        ?>
-        ```
-   2. Sustituyes los segundos valores (localhost, root, etc.)
-   3. En caso de que este fichero este creado, realizamos el paso número 2 directamente.
+1. Si este fichero no existe, lo creas siguiendo el siguiente ejemplo:
+    ```php
+    <?php 
+    define("SERVIDOR","localhost"); 
+    define("USUARIO","root");
+    define("PASSWORD","");
+    define("BD","db_restaurante");
+    ?>
+    ```
+2. Sustituyes los segundos valores (localhost, root, etc.)
+3. En caso de que este fichero este creado, realizamos el paso número 2 directamente.
 
 
 _Ejemplo: Para poder hacer login en nuestro proyecto_
 
 
-   1. *IMPORTANTE:* Tener la base de datos bien linkeada
-   2. Utilizar de usuario "isaac@fje.edu" y pass "1234" en caso de acceder como camarero
-   3. Utilizar de usuario "manolo@fje.edu" y password "1234
-    " en caso de acceder como mantenimiento
+1. *IMPORTANTE:* Tener la base de datos bien linkeada
+2. Utilizar de usuario "isaac@fje.edu" y pass "1234" en caso de acceder como camarero
+3. Utilizar de usuario "manolo@fje.edu" y password "1234
+" en caso de acceder como mantenimiento
 
 
 ## Despliegue 📦
